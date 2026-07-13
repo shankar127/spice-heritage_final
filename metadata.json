@@ -1,0 +1,6 @@
+{
+  "name": "Spice Heritage",
+  "description": "Spice Heritage - Authentic Indian Flavors, Crafted with Tradition. Premium dining, table reservations, and interactive online ordering experience.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  
+  /* Premium Obsidian & Luminous Yellow Color mappings */
+  --color-gold-50: #ffffff; /* Ultra bright high contrast white */
+  --color-gold-100: #fef08a; /* High visibility luminous yellow text */
+  --color-gold-200: #fcd34d; /* Bright warm gold text */
+  --color-gold-300: #facc15; /* Signature Vibrant Yellow */
+  --color-gold-400: #eab308; /* Luminous Yellow Accent */
+  --color-gold-500: #facc15; /* Signature Vibrant Yellow */
+  --color-gold-600: #ca8a04; /* Rich Accent Gold */
+  --color-gold-700: #a16207; /* Deep Accent Gold */
+  --color-gold-800: #121212; /* Premium Deep Charcoal Element */
+  --color-gold-900: #1e1e1f; /* Elegant Dark Border */
+  --color-gold-950: #000000; /* Absolute Obsidian Black */
+  
+  --color-bronze: #facc15;
+}
+
+/* Base style modifications for Premium Black background and high-contrast Yellow typography */
+body {
+  background-color: #000000;
+  color: #f3f4f6;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Custom styled scrollbar matching the obsidian theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border: 1px solid #facc15;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #facc15;
+}
+
+/* Selection highlight - Extremely visible */
+::selection {
+  background-color: #facc15;
+  color: #000000;
+}
+
+/* Force ALL sections to have pitch black/dark backgrounds for premium aesthetic coherence */
+section {
+  background-color: #000000 !important;
+  color: #f3f4f6 !important;
+}
+
+section:nth-of-type(even) {
+  background-color: #08080a !important;
+}
+
+/* Specific section overrides */
+#home {
+  background-color: #000000 !important;
+}
+
+#about {
+  background-color: #08080a !important;
+}
+
+#menu {
+  background-color: #000000 !important;
+}
+
+#chefs {
+  background-color: #08080a !important;
+}
+
+#gallery {
+  background-color: #000000 !important;
+}
+
+#testimonials {
+  background-color: #08080a !important;
+}
+
+#reservations {
+  background-color: #000000 !important;
+}
+
+#faq {
+  background-color: #08080a !important;
+}
+
+#contact {
+  background-color: #000000 !important;
+}
+
+/* Footer Section styling in Black and Yellow */
+footer {
+  background-color: #050505 !important;
+  border-top: 1px solid rgba(250, 204, 21, 0.2) !important;
+  color: #d1d5db !important;
+}
+
+/* Card and containers backgrounds (force to be dark grey/black with yellow borders) */
+.bg-white, .bg-\[\#0a0705\], .bg-\[\#0b0805\], .bg-\[\#0f0b07\], .bg-\[\#070503\], .bg-\[\#0c0906\], .bg-black {
+  background-color: #09090b !important;
+  color: #f3f4f6 !important;
+  border-color: rgba(250, 204, 21, 0.15) !important;
+}
+
+/* Floating panels, dropdowns, and drawers */
+.bg-\[\#0f0b07\]\/95, .bg-\[\#0f0b07\]\/60, .bg-\[\#0b0805\]\/50, .bg-\[\#0f0b07\]\/50, .bg-\[\#0f0b07\]\/80, .bg-\[\#0b0805\]\/60, .bg-black\/60, .bg-white\/95 {
+  background-color: rgba(9, 9, 11, 0.95) !important;
+  color: #f3f4f6 !important;
+}
+
+/* Border overrides (replace boundaries with soft yellow boundaries for crisp visibility) */
+.border-orange-100, .border-zinc-800, .border-gold-950\/20, .border-gold-950\/40, .border-gold-900\/15, .border-gold-900\/10, .border-gold-900\/20, .border-gold-800\/10, .border-gold-800\/20, .border-gold-800\/30, .border-gold-800\/40, .border-gold-500\/10, .border-gold-500\/20, .border-gold-400\/40, .border-gold-400\/30 {
+  border-color: rgba(250, 204, 21, 0.2) !important;
+}
+
+/* Shadow details mapped to gold/yellow glow */
+.shadow-md, .shadow-lg, .shadow-xl, .shadow-2xl {
+  box-shadow: 0 10px 30px -10px rgba(250, 204, 21, 0.05) !important;
+}
+
+/* Badge and decorative indicators */
+.bg-orange-50, .bg-orange-100, .bg-orange-100\/80, .bg-gold-950\/60, .bg-gold-950\/40, .bg-gold-950\/80, .bg-gold-950\/20 {
+  background-color: rgba(250, 204, 21, 0.08) !important;
+  color: #facc15 !important;
+  border: 1px solid rgba(250, 204, 21, 0.25) !important;
+}
+
+/* Vector element icons, arrows, markers mapped to yellow/gold */
+svg, .text-orange-600, .text-orange-700, .text-gold-400, .text-gold-300, .text-gold-200 {
+  color: #facc15 !important;
+}
+
+/* Specific circle path highlights for traditional curved designs */
+circle[stroke="#af8d32"], circle[stroke="#ea580c"] {
+  stroke: #facc15 !important;
+}
+circle[stroke="#4b3616"], circle[stroke="#ffedd5"] {
+  stroke: #27272a !important;
+}
+
+/* Title text gradient overrides - Force crisp premium Yellow */
+.text-transparent.bg-gradient-to-r {
+  background: none !important;
+  background-clip: unset !important;
+  color: #ffffff !important;
+}
+
+.text-gray-900 {
+  color: #ffffff !important;
+}
+
+.text-gray-600 {
+  color: #d1d5db !important;
+}
+
+.text-gray-700 {
+  color: #e5e7eb !important;
+}
+
+.text-gray-500 {
+  color: #9ca3af !important;
+}
+
+.italic.bg-gradient-to-r, span.text-orange-600 {
+  color: #facc15 !important;
+}
+
+/* Header links */
+header a, header nav a {
+  color: #e5e7eb !important;
+}
+
+header a:hover, header nav a:hover, header a.text-orange-600 {
+  color: #facc15 !important;
+}
+
+/* Button transitions */
+button {
+  transition: all 0.3s ease-out !important;
+}
+
+/* Handle primary gradients / backgrounds mapping to vibrant Yellow */
+.bg-orange-600, .bg-orange-700, .bg-gradient-to-r.from-gold-800, .bg-gradient-to-r.from-gold-500, .bg-gold-50, .bg-gold-100, .bg-gold-200, .bg-gold-300, .bg-gold-500, .bg-gold-600, button.bg-gold-500, button.bg-gold-600 {
+  background-image: none !important;
+  background-color: #facc15 !important;
+  color: #000000 !important;
+  border-color: transparent !important;
+}
+
+.bg-orange-600:hover, .bg-orange-700:hover, .bg-gradient-to-r.from-gold-800:hover, .bg-gradient-to-r.from-gold-500:hover, .bg-gold-500:hover, .bg-gold-600:hover, button.bg-gold-500:hover, button.bg-gold-600:hover {
+  background-color: #eab308 !important;
+  color: #000000 !important;
+}
+
+/* Secondary ghost buttons mapping to Yellow outlines with transparent black backgrounds */
+.border-orange-200, button.border-gold-400\/40, button.border-gold-400\/20, button.bg-gold-950 {
+  background-color: transparent !important;
+  border: 2px solid #facc15 !important;
+  color: #facc15 !important;
+}
+
+.border-orange-200:hover, button.border-gold-400\/40:hover, button.border-gold-400\/20:hover, button.bg-gold-950:hover {
+  background-color: rgba(250, 204, 21, 0.1) !important;
+  color: #ffffff !important;
+}
+
+/* Input Fields overrides for absolute luxury dark look */
+input, textarea, select {
+  background-color: #09090b !important;
+  color: #ffffff !important;
+  border: 1.5px solid rgba(250, 204, 21, 0.3) !important;
+}
+
+input::placeholder, textarea::placeholder {
+  color: rgba(255, 255, 255, 0.3) !important;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #facc15 !important;
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(250, 204, 21, 0.15) !important;
+}
+
+/* Cart overlay drawer & modal wrapper details */
+.fixed.right-0.top-0 {
+  background-color: #050505 !important;
+  color: #ffffff !important;
+  border-left: 1px solid rgba(250, 204, 21, 0.2) !important;
+}
+
+/* Toast message visual consistency */
+.fixed.bottom-6.left-6 {
+  background-color: #09090b !important;
+  color: #ffffff !important;
+  border-color: #facc15 !important;
+}
+
+/* Map specific vector elements style adaptation */
+.bg-\[\#0c0906\], .bg-orange-50\/50, .bg-orange-50\/80 {
+  background-color: #0c0c0e !important;
+}
+.grid-cols-6 div {
+  border-color: rgba(250, 204, 21, 0.15) !important;
+}
+.rotate-\[-12deg\] {
+  background-color: #121214 !important;
+  border-color: rgba(250, 204, 21, 0.3) !important;
+}
+.rotate-\[-12deg\] span {
+  color: #facc15 !important;
+}
+.rotate-\[20deg\] {
+  background-color: #0c0c0e !important;
+  border-color: rgba(250, 204, 21, 0.2) !important;
+}
+
+/* Card typography corrections for elite black/yellow look */
+.text-zinc-600, .text-zinc-500, .text-stone-500 {
+  color: #a1a1aa !important;
+}
+.text-zinc-900, .text-zinc-800, .text-stone-800 {
+  color: #f4f4f5 !important;
+}
